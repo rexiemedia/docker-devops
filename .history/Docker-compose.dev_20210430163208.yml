@@ -1,0 +1,8 @@
+version: "3.2"
+services:
+    node-app:
+    volumes: 
+        - ./:/app
+        - /app/node_modules
+    environment:
+        - NODE_ENV=development

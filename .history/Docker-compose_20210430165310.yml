@@ -1,0 +1,10 @@
+version: "3.2"
+services:
+    node-app:
+        build: .
+# if both environment is the same then put both port here
+# else put in various file i.e. dev and prod
+        ports:
+            - "3000:3000"
+        environment: 
+            - PORT=3000
